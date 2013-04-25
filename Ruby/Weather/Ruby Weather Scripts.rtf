@@ -1,0 +1,132 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww13860\viewh16600\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 #!/usr/bin/ruby\
+\
+require 'open-uri'\
+require '/usr/local/lib/ruby/gems/1.9.1/gems/xml-simple-1.1.2/lib/xmlsimple.rb'\
+#require '/usr/local/lib/ruby/gems/1.9.1/gems/nokogiri-1.5.5/lib/nokogiri.rb'\
+\
+def fetch_xml()\
+  open("http://weather.yahooapis.com/forecastrss?w=2424766&u=f")\
+end\
+\
+def parse_xml_Simple()\
+  source = XmlSimple.xml_in(fetch_xml)\
+\
+  weatherdata = [source['channel'][0]['location'][0]['city'].to_s,\
+   source['channel'][0]['location'][0]['region'].to_s, \
+    source['channel'][0]['item'][0]['condition'][0]['temp'].to_i, \
+   	source['channel'][0]['item'][0]['condition'][0]['text'].to_s, \
+    source['channel'][0]['item'][0]['forecast'][0]['low'].to_i, \
+    source['channel'][0]['item'][0]['forecast'][0]['high'].to_i ]\
+\
+	weatherdata.to_s\
+end\
+\
+def display_weather()\
+  result = parse_xml_Simple()\
+  print "#\{result\}\\n"\
+end\
+\
+display_weather\
+\
+\
+\
+\
+==========================================CITY VERSION==========================================\
+#!/usr/bin/ruby\
+\
+require 'open-uri'\
+require_relative 'xmlsimple.rb'\
+\
+def fetch_xml()\
+  open("http://weather.yahooapis.com/forecastrss?w=2424766&u=f")\
+end\
+\
+def parse_xml_Simple()\
+  source = XmlSimple.xml_in(fetch_xml)\
+\
+  weatherdata = [source['channel'][0]['location'][0]['city']]\
+\
+	weatherdata.to_s\
+end\
+\
+def display_weather()\
+  result = parse_xml_Simple()\
+  print result\
+end\
+\
+display_weather\
+========================================CURRENT TEMP========================================\
+#!/usr/bin/ruby\
+\
+require 'open-uri'\
+require '/Users/christophercruz/.rvm/gems/ruby-1.9.3-p374/gems/xml-simple-1.1.2/lib/xmlsimple.rb'\
+\
+def fetch_xml()\
+  open("http://weather.yahooapis.com/forecastrss?w=2424766&u=f")\
+end\
+\
+def parse_xml_Simple()\
+  xmlsimple = XmlSimple.new\
+  source = XmlSimple.xml_in(fetch_xml)\
+	weatherdata = [source['channel'][0]['item'][0]['condition'][0]['temp'].to_i]  \
+	weatherdata.to_s\
+end\
+\
+def display_weather()\
+  result = parse_xml_Simple()\
+  print "Current Temp #\{result\}"\
+end\
+\
+display_weather\
+========================================CURRENT HIGH========================================\
+#!/usr/bin/ruby\
+\
+require 'open-uri'\
+require '/Users/christophercruz/.rvm/gems/ruby-1.9.3-p374/gems/xml-simple-1.1.2/lib/xmlsimple.rb'\
+\
+def fetch_xml()\
+  open("http://weather.yahooapis.com/forecastrss?w=2424766&u=f")\
+end\
+\
+def parse_xml_Simple()\
+  source = XmlSimple.xml_in(fetch_xml)\
+\
+  weatherdata = [source['channel'][0]['item'][0]['forecast'][0]['high'].to_i ]\
+	weatherdata.to_s\
+end\
+\
+def display_weather()\
+  result = parse_xml_Simple()\
+  print "High: #\{result\}"\
+end\
+\
+display_weather\
+========================================CURRENT LOW========================================\
+#!/usr/bin/ruby\
+\
+require 'open-uri'\
+require '/Users/christophercruz/.rvm/gems/ruby-1.9.3-p374/gems/xml-simple-1.1.2/lib/xmlsimple.rb'\
+\
+def fetch_xml()\
+  open("http://weather.yahooapis.com/forecastrss?w=2424766&u=f")\
+end\
+\
+def parse_xml_Simple()\
+  source = XmlSimple.xml_in(fetch_xml)\
+\
+  weatherdata = [source['channel'][0]['item'][0]['forecast'][0]['low'].to_i ]\
+	weatherdata.to_s\
+end\
+\
+def display_weather()\
+  result = parse_xml_Simple()\
+  print "Low: #\{result\}"\
+end\
+\
+display_weather}

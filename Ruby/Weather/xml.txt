@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+		<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+			<channel>
+		
+<title>Yahoo! Weather - Houston, TX</title>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Houston__TX/*http://weather.yahoo.com/forecast/USTX0617_f.html</link>
+<description>Yahoo! Weather for Houston, TX</description>
+<language>en-us</language>
+<lastBuildDate>Wed, 17 Apr 2013 10:51 am CDT</lastBuildDate>
+<ttl>60</ttl>
+<yweather:location city="Houston" region="TX"   country="United States"/>
+<yweather:units temperature="F" distance="mi" pressure="in" speed="mph"/>
+<yweather:wind chill="75"   direction="140"   speed="12" />
+<yweather:atmosphere humidity="84"  visibility="9"  pressure="29.92"  rising="0" />
+<yweather:astronomy sunrise="6:50 am"   sunset="7:47 pm"/>
+<image>
+<title>Yahoo! Weather</title>
+<width>142</width>
+<height>18</height>
+<link>http://weather.yahoo.com</link>
+<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+</image>
+<item>
+<title>Conditions for Houston, TX at 10:51 am CDT</title>
+<geo:lat>29.76</geo:lat>
+<geo:long>-95.37</geo:long>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Houston__TX/*http://weather.yahoo.com/forecast/USTX0617_f.html</link>
+<pubDate>Wed, 17 Apr 2013 10:51 am CDT</pubDate>
+<yweather:condition  text="Cloudy"  code="26"  temp="75"  date="Wed, 17 Apr 2013 10:51 am CDT" />
+<description><![CDATA[
+<img src="http://l.yimg.com/a/i/us/we/52/26.gif"/><br />
+<b>Current Conditions:</b><br />
+Cloudy, 75 F<BR />
+<BR /><b>Forecast:</b><BR />
+Wed - Cloudy. High: 79 Low: 71<br />
+Thu - PM Thunderstorms. High: 80 Low: 49<br />
+<br />
+<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Houston__TX/*http://weather.yahoo.com/forecast/USTX0617_f.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>
+(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
+]]></description>
+<yweather:forecast day="Wed" date="17 Apr 2013" low="71" high="79" text="Cloudy" code="26" />
+<yweather:forecast day="Thu" date="18 Apr 2013" low="49" high="80" text="PM Thunderstorms" code="38" />
+<guid isPermaLink="false">USTX0617_2013_04_18_7_00_CDT</guid>
+</item>
+</channel>
+</rss>
+
+<!-- api2.weather.bf1.yahoo.com Wed Apr 17 17:06:52 PST 2013 -->
