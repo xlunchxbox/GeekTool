@@ -1,11 +1,10 @@
 #!/usr/bin/ruby
 
-def grab_System_Time
+def time
   time = Time.new  
   
-  print "#{time.month} #{time.day} #{time.year}\n"
-  print "#{time.hour}:#{time.min}:#{time.sec}"
-  
+  puts time.strftime("%A, %B, %d, %Y")
+  puts time.strftime("%I:%M:%S %p")
 end
 
-grab_System_Time
+time
