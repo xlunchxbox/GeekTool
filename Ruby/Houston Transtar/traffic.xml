@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Houston TranStar Incidents</title>
+        <link>http://traffic.houstontranstar.org</link>
+        <description>Houston TranStar Incidents</description>
+        <language>en-us</language>
+        <pubDate>Wed, 01 May 2013 16:30:01 GMT</pubDate>
+        <item>
+            <title>IH-45 NORTH Northbound At BELTWAY 8-NORTH - Accident</title>
+            <link>http://traffic.houstontranstar.org</link>
+            <description>Status: Cleared at 11:16 AM</description>
+            <pubDate>Wed, 01 May 2013 16:30:01 GMT</pubDate>
+            <guid isPermaLink="false">19040511827</guid>
+        </item>
+    </channel>
+</rss>
