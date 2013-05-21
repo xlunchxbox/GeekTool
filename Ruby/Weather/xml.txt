@@ -6,12 +6,12 @@
 <link>http://us.rd.yahoo.com/dailynews/rss/weather/Houston__TX/*http://weather.yahoo.com/forecast/USTX0617_f.html</link>
 <description>Yahoo! Weather for Houston, TX</description>
 <language>en-us</language>
-<lastBuildDate>Tue, 21 May 2013 9:52 am CDT</lastBuildDate>
+<lastBuildDate>Tue, 21 May 2013 10:51 am CDT</lastBuildDate>
 <ttl>60</ttl>
 <yweather:location city="Houston" region="TX"   country="United States"/>
 <yweather:units temperature="F" distance="mi" pressure="in" speed="mph"/>
-<yweather:wind chill="82"   direction="160"   speed="16" />
-<yweather:atmosphere humidity="67"  visibility="10"  pressure="29.86"  rising="0" />
+<yweather:wind chill="83"   direction="170"   speed="18" />
+<yweather:atmosphere humidity="67"  visibility="10"  pressure="29.85"  rising="2" />
 <yweather:astronomy sunrise="6:25 am"   sunset="8:08 pm"/>
 <image>
 <title>Yahoo! Weather</title>
@@ -21,16 +21,16 @@
 <url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
 </image>
 <item>
-<title>Conditions for Houston, TX at 9:52 am CDT</title>
+<title>Conditions for Houston, TX at 10:51 am CDT</title>
 <geo:lat>29.76</geo:lat>
 <geo:long>-95.37</geo:long>
 <link>http://us.rd.yahoo.com/dailynews/rss/weather/Houston__TX/*http://weather.yahoo.com/forecast/USTX0617_f.html</link>
-<pubDate>Tue, 21 May 2013 9:52 am CDT</pubDate>
-<yweather:condition  text="Partly Cloudy"  code="30"  temp="82"  date="Tue, 21 May 2013 9:52 am CDT" />
+<pubDate>Tue, 21 May 2013 10:51 am CDT</pubDate>
+<yweather:condition  text="Partly Cloudy"  code="30"  temp="83"  date="Tue, 21 May 2013 10:51 am CDT" />
 <description><![CDATA[
 <img src="http://l.yimg.com/a/i/us/we/52/30.gif"/><br />
 <b>Current Conditions:</b><br />
-Partly Cloudy, 82 F<BR />
+Partly Cloudy, 83 F<BR />
 <BR /><b>Forecast:</b><BR />
 Tue - Partly Cloudy/Wind. High: 87 Low: 73<br />
 Wed - Isolated Thunderstorms. High: 88 Low: 71<br />
@@ -45,4 +45,4 @@ Wed - Isolated Thunderstorms. High: 88 Low: 71<br />
 </channel>
 </rss>
 
-<!-- api27.weather.bf1.yahoo.com Tue May 21 16:09:48 PST 2013 -->
+<!-- api5.weather.bf1.yahoo.com Tue May 21 16:18:51 PST 2013 -->
