@@ -1,3 +1,3 @@
-cd //Volumes/Macintosh\ HD/Users/christophercruz/Desktop/Break\ Projects/Ruby\ Weather/
+cd /Github/GeekTool\ Scripts/Ruby/Weather/
 
 ruby xmlscript.rb
